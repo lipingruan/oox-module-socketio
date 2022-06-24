@@ -1,0 +1,38 @@
+{
+    "name": "@oox/module-socketio",
+    "private": true,
+    "version": "0.0.1",
+    "description": "socket.io module of OOX",
+    "keywords": [
+        "oox",
+        "module",
+        "plugin",
+        "socket.io",
+        "rpc",
+        "microservice"
+    ],
+    "type": "module",
+    "main": "dist/index.js",
+    "types": "dist/types/index.d.ts",
+    "exports": {
+        "types": "./dist/types/index.d.ts"
+    },
+    "scripts": {
+        "build": "node scripts/compile && node scripts/linking"
+    },
+    "author": "lipingruan",
+    "homepage": "https://github.com/lipingruan/oox-module-socketio",
+    "license": "MIT",
+    "dependencies": {
+        "chalk": "^4.1.0",
+        "socket.io": "^4.4.0",
+        "socket.io-client": "^4.4.0"
+    },
+    "devDependencies": {
+        "oox": "^0.3.0-beta1",
+        "typescript": "^4.7.3"
+    },
+    "engines": {
+        "node": ">=12.0.0"
+    }
+}
