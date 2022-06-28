@@ -26,7 +26,7 @@ export default class SocketIOServer extends Module {
     
 
 
-    name = 'oox:socketio'
+    name = 'socketio'
 
 
 
