@@ -52,6 +52,16 @@ export default class SocketIOServer extends Module {
     setConfig ( config:SocketIOConfig ) {
 
         Object.assign ( this.config, config )
+
+        if ( !Object.hasOwn ( config, 'port' ) ) {
+
+            this.config.port = oox.config.port
+        }
+
+        if ( !Object.hasOwn ( config, 'origin' ) ) {
+
+            this.config.origin = oox.config.origin
+        }
     }
     
     
