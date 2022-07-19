@@ -53,12 +53,12 @@ export default class SocketIOServer extends Module {
 
         Object.assign ( this.config, config )
 
-        if ( !Object.hasOwn ( config, 'port' ) ) {
+        if ( !config.hasOwnProperty ( 'port' ) ) {
 
             this.config.port = oox.config.port
         }
 
-        if ( !Object.hasOwn ( config, 'origin' ) ) {
+        if ( !config.hasOwnProperty ( 'origin' ) ) {
 
             this.config.origin = oox.config.origin
         }
